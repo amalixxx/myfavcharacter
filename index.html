@@ -19,9 +19,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
+            padding: 20px;
         }
 
         .container {
@@ -50,10 +48,20 @@
             -webkit-text-fill-color: transparent;
         }
 
+        .text-content {
+            margin-bottom: 20px;
+        }
+
         p {
             font-size: 1.1em;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
         }
 
         .btn {
@@ -89,16 +97,6 @@
             bottom: -200px;
             left: auto;
             right: -200px;
-        }
-
-        @media (max-width: 400px) {
-            .container {
-                width: 90%;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
         }
 
         /* Секция с интерактивными кнопками */
@@ -243,28 +241,38 @@
     </style>
 </head>
 <body>
-
-    <div class="background-circle"></div>
-    <div class="background-circle bottom"></div>
-
     <div class="container">
-        <h1>Мой любимый персонаж</h1>
-        <p>Кэди Хирон — это персонаж из фильма "Дрянные девчонки". Она — главная героиня, которая проходит путь от скромной и доброй девушки до участницы школьных интриг. Её история вдохновляет, потому что она учится быть верной себе и не поддаваться влиянию общества. Она стала настоящей иконической фигурой в поп-культуре!</p>
-        <button class="btn">Узнать больше</button>
+        <div class="background-circle"></div>
+        <div class="background-circle bottom"></div>
+
+        <h1>Кэди Хирон</h1>
+
+        <div class="text-content">
+            <img src="cady-image1.jpg" alt="Кэди Хирон">
+            <p>Кэди Хирон — главная героиня культового фильма <em>«Дрянные девчонки»</em>, который вышел в 2004 году. Её сыграла Линдси Лохан.</p>
+            
+            <img src="mean-girls-poster.jpg" alt="Постер фильма Дрянные девчонки">
+            <p>Фильм рассказывает о том, как Кэди, выросшая в Африке, впервые сталкивается с жестокими законами американской школы и мира девичьих интриг.</p>
+
+            <img src="cady-image2.jpg" alt="Кэди в школе">
+            <p>Она пытается вписаться в общество, но попадает в ловушку популярности и фальшивых друзей, прежде чем находит свою настоящую личность.</p>
+        </div>
+
+        <button class="btn">Подробнее</button>
     </div>
 
-    <!-- Секция с интерактивными кнопками -->
+    <!-- Кнопки с интересными эффектами -->
     <div class="buttons-container">
-        <button class="interactive-btn btn-1">1</button>
-        <button class="interactive-btn btn-2">2</button>
-        <button class="interactive-btn btn-3">3</button>
-        <button class="interactive-btn btn-4">4</button>
-        <button class="interactive-btn btn-5">5</button>
-        <button class="interactive-btn btn-6">6</button>
-        <button class="interactive-btn btn-7">7</button>
-        <button class="interactive-btn btn-8">8</button>
-        <button class="interactive-btn btn-9">9</button>
-        <button class="interactive-btn btn-10">10</button>
+        <button class="interactive-btn btn-1">Кнопка 1</button>
+        <button class="interactive-btn btn-2">Кнопка 2</button>
+        <button class="interactive-btn btn-3">Кнопка 3</button>
+        <button class="interactive-btn btn-4">Кнопка 4</button>
+        <button class="interactive-btn btn-5">Кнопка 5</button>
+        <button class="interactive-btn btn-6">Кнопка 6</button>
+        <button class="interactive-btn btn-7">Кнопка 7</button>
+        <button class="interactive-btn btn-8">Кнопка 8</button>
+        <button class="interactive-btn btn-9">Кнопка 9</button>
+        <button class="interactive-btn btn-10">Кнопка 10</button>
     </div>
 
 </body>
